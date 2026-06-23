@@ -6,7 +6,7 @@ from spikingjelly.clock_driven.neuron import BaseNode, LIFNode
 from torchvision import transforms
 import math
 
-#代码,haha1
+
 class PLIFNode(BaseNode):
     def __init__(self, init_tau=2.0, v_threshold=1.0, v_reset=0.0, detach_reset=True, surrogate_function=surrogate.ATan(), monitor_state=False):
         super().__init__(v_threshold, v_reset, surrogate_function, detach_reset, monitor_state)
